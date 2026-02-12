@@ -2,6 +2,7 @@
 Holds the main logic of the project
 '''
 from manufacturer import manufacturer
+from auto_model import auto_model
 def main():
     '''
     Contains the primary logic of the program. 
@@ -13,7 +14,7 @@ def main():
         None.
     '''
     m = manufacturer("Ford", "USA")
-    pass
+    a_m = auto_model("Fiesta", False, "1976 - 2023")
 
 
 if __name__ == "__main__":

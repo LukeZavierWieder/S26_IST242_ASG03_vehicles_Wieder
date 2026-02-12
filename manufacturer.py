@@ -8,7 +8,9 @@ class manufacturer():
     
     # Constructer
     def __init__(self, name : str, country : str):
+        # Name of manufacturer
         self.__name = name
+        # Country in which manufacturer is based
         self.__country = country
 
     # Properties

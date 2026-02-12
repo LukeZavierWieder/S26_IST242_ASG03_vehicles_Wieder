@@ -7,10 +7,15 @@ class auto_model():
     '''
 
     def __init__(self, name : str, in_production : bool, years : list[int]):
+        # Name of Auto Model
         self.__name = name
+        # If the model is still in production
         self.__in_production = in_production
+        # Years of production
         self.__years = years
 
+    
+    # Properties
     @property
     def get_name(self):
         '''
