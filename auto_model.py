@@ -47,5 +47,5 @@ class AutoModel:
         return list(self._years)
     
     def __str__(self):
-
-        pass
+        return f"{self._name} inproduction = {self._in_production}"
+        f"  release years = {self._years}"
