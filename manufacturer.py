@@ -34,3 +34,9 @@ class Manufacturer:
             self
         '''
         return self._country
+    
+    def __str__(self):
+        '''
+        Prints out the manufacturer object
+        '''
+        return f"({self._name}, {self._country})"

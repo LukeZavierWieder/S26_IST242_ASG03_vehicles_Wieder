@@ -14,6 +14,10 @@ def main():
         None.
     '''
     m = Manufacturer("Ford", "USA")
+    print(m.get_name)
+    print(m.get_country)
+    print(m)
+    
     a_m = AutoModel("Fiesta", False, "1976 - 2023")
 
 
