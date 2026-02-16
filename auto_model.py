@@ -1,7 +1,7 @@
 '''
 Holds data on years the models are produced
 '''
-class auto_model():
+class AutoModel:
     '''
     Creates the auto model class
     '''
