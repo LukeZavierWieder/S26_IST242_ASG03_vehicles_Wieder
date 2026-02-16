@@ -1,7 +1,7 @@
 '''
 This holds manufacturer data for different car manufacturers
 '''
-class manufacturer():
+class Manufacturer:
     '''
     Creates the manufacturer class.
     '''
