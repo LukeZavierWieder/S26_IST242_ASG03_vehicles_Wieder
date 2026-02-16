@@ -12,7 +12,7 @@ class AutoModel:
         # If the model is still in production
         self._in_production = in_production
         # Years of production
-        self._years = years
+        self._years =list(years)
 
     
     # Properties
@@ -44,4 +44,8 @@ class AutoModel:
         Parameter:
             self: 
         '''
-        return self._years
+        return list(self._years)
+    
+    def __str__(self):
+
+        pass
