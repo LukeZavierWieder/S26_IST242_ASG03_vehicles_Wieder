@@ -9,11 +9,11 @@ class Manufacturer:
     # Constructer
     def __init__(self, name : str, country : str):
         # Name of manufacturer
-        self.__name = name
+        self._name = name
         # Country in which manufacturer is based
-        self.__country = country
+        self._country = country
 
-    # Properties
+    # Properties (getters)
     @property
     def get_name(self):
         '''
@@ -22,7 +22,7 @@ class Manufacturer:
         Parameter:
             self: 
         '''
-        return self.__name 
+        return self._name 
     
 
     @property
@@ -33,4 +33,4 @@ class Manufacturer:
         Parameter: 
             self
         '''
-        return self.__country
+        return self._country

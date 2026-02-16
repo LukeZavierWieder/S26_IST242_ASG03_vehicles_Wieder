@@ -8,11 +8,11 @@ class AutoModel:
 
     def __init__(self, name : str, in_production : bool, years : list[int]):
         # Name of Auto Model
-        self.__name = name
+        self._name = name
         # If the model is still in production
-        self.__in_production = in_production
+        self._in_production = in_production
         # Years of production
-        self.__years = years
+        self._years = years
 
     
     # Properties
@@ -24,7 +24,7 @@ class AutoModel:
         Parameter:
             self: 
         '''
-        return self.__name 
+        return self._name 
     
     @property
     def get_in_production(self):
@@ -34,7 +34,7 @@ class AutoModel:
         Parameter:
             self: 
         '''
-        return self.__in_production 
+        return self._in_production 
     
     @property
     def get_years(self):
@@ -44,4 +44,4 @@ class AutoModel:
         Parameter:
             self: 
         '''
-        return self.__years
+        return self._years
