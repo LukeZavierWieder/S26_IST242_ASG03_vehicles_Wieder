@@ -29,3 +29,8 @@ class Vehicle(ABC):
     @property
     def mpg(self):
         return self._mpg
+    
+    # Concrete method
+    def how_far_with(self, num_of_gallons: int):
+        return self._mpg * num_of_gallons
+
