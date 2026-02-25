@@ -12,7 +12,8 @@ class Vehicle(ABC):
     Creates the abstract base vehicle class
     '''
     # Constructor
-    def __init__(self, manufacturer : Manufacturer, model: AutoModel, mpg: float):
+    def __init__(self, manufacturer : Manufacturer,
+                 model: AutoModel, mpg: float):
         self._manufacturer = manufacturer
         self._model = model
         self._mpg = mpg

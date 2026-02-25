@@ -1,18 +1,18 @@
 '''
 Holds data for the sedan vehicle class
 '''
+from vehicle import Vehicle
+from manufacturer import Manufacturer
+from auto_model import AutoModel
 
-class Sedan:
+class Sedan(Vehicle):
     '''
-    Creates the sedan class
+    Creates the sedan class of vehicles
     '''
 
-    def __init__(self, manufacturer, model, mpg: float):
-        # Manufacturer
-        self._manufacturer = manufacturer
-        # Auto Model
-        self._model = model
-        # Miles per Gallon
-        self._mpg = mpg
+    # Constructor
+    def __init__(self, manufacturer: Manufacturer,
+                model: AutoModel, mpg: float):
+        super().__init__(manufacturer, model, mpg)
     
     
