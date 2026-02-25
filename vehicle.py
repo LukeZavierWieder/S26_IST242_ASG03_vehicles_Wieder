@@ -1,10 +1,31 @@
 '''
 Holds the vehicle class data
 '''
+from abc import ABC, abstractmethod
+# from functools import total_ordering # Sorting purposes
 
-class Vehicle:
-    '''
-    Creates the abstract vehicle class
-    '''
+from manufacturer import Manufacturer
+from auto_model import AutoModel
 
-    pass
+class Vehicle(ABC):
+    '''
+    Creates the abstract base vehicle class
+    '''
+    # Constructor
+    def __init__(self, manufacturer : Manufacturer, model: AutoModel, mpg: float):
+        self._manufacturer = manufacturer
+        self._model = model
+        self._mpg = mpg
+    
+    # Getters
+    @property
+    def manufacturer(self):
+        return self._manufacturer
+    
+    @property
+    def model(self):
+        return self._model
+    
+    @property
+    def mpg(self):
+        return self._mpg
