@@ -24,12 +24,12 @@ class TestManufacturer:
         m = Manufacturer("BMW", "Germany")
         assert str(m) == "(BMW, Germany)"
 
-class AutoModel:
+class TestAutoModel:
     def test_contructor_and_getters(self):
         am = AutoModel("F150", True, [2020, 2021, 2022])
         assert am.get_name == "F150"
         assert am.get_in_production == True
-        assert am.get_year == [2020, 2021, 2022]
+        assert am.get_years == [2020, 2021, 2022]
     
     def test_years_defensive_copy(self):
         original_list = [2020, 2021]
