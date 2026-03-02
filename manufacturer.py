@@ -15,7 +15,7 @@ class Manufacturer:
 
     # Properties (getters)
     @property
-    def get_name(self):
+    def name(self):
         '''
         returns the name
         
@@ -26,7 +26,7 @@ class Manufacturer:
     
 
     @property
-    def get_country(self):
+    def country(self):
         '''
         returns the country
         

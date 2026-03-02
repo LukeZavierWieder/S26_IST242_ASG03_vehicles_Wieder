@@ -17,7 +17,7 @@ class AutoModel:
     
     # Properties
     @property
-    def get_name(self):
+    def name(self):
         '''
         returns the name
         
@@ -27,7 +27,7 @@ class AutoModel:
         return self._name 
     
     @property
-    def get_in_production(self):
+    def in_production(self):
         '''
         returns the name
         
@@ -37,7 +37,7 @@ class AutoModel:
         return self._in_production 
     
     @property
-    def get_years(self):
+    def years(self):
         '''
         returns the name
         
@@ -46,7 +46,7 @@ class AutoModel:
         '''
         return list(self._years)
     
-    def get_release_year(self):
+    def release_year(self):
         return self._years[0]
     
     def __str__(self):
