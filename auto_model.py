@@ -45,8 +45,11 @@ class AutoModel:
             self: 
         '''
         return list(self._years)
-    
-    def release_year(self):
+    @property
+    def first_year(self):
+        '''
+        Returns the first production year
+        '''
         return self._years[0]
     
     def __str__(self):
