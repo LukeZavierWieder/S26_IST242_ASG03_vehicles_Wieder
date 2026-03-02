@@ -7,6 +7,9 @@ class AutoModel:
     '''
 
     def __init__(self, name : str, in_production : bool, years : list[int]):
+        # Error for empty list
+        if not years:
+            raise ValueError("Years list must not be empty.")
         # Name of Auto Model
         self._name = name
         # If the model is still in production
@@ -47,6 +50,12 @@ class AutoModel:
         return list(self._years)
     @property
     def first_year(self):
+        '''
+        Returns the first production year
+        '''
+        return self._years[0]
+    @property
+    def release_year(self):
         '''
         Returns the first production year
         '''
