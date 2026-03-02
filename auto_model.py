@@ -46,6 +46,9 @@ class AutoModel:
         '''
         return list(self._years)
     
+    def get_release_year(self):
+        return self._years[0]
+    
     def __str__(self):
         return f"{self._name} inproduction = {self._in_production}"
         f"  release years = {self._years}"

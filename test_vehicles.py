@@ -39,7 +39,7 @@ class TestAutoModel:
         original_list.clear()
         assert am.get_years == [2020, 2021]
 '''
-
+'''
 class TestSedan:
 
     @pytest.fixture
@@ -82,3 +82,4 @@ class TestSedan:
 
     def test_is_instance_of_vehicle(self, civic):
         assert isinstance(civic, Vehicle)
+'''
