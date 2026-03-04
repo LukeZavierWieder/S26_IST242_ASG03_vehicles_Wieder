@@ -32,6 +32,10 @@ class Truck(Vehicle):
         Returns the first production year
         '''
         return self._years[0]
+    # Create release year getter
+    @property
+    def release_year(self):
+        return self.model.first_year
     
     # Printing truck
     def __str__(self):
