@@ -226,7 +226,7 @@ class TestTruck:
     def test_is_instance_of_vehicle(self, f150):
         assert isinstance(f150, Vehicle)
 
-'''
+
 # ============================================================
 #  Comparable / ordering tests
 # ============================================================
@@ -470,4 +470,3 @@ class TestIntegration:
 
         # Verify how_far_with
         assert after[1].how_far_with(10) == pytest.approx(280.0)  # Civic: 28 mpg
-'''
