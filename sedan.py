@@ -27,7 +27,7 @@ class Sedan(Vehicle):
     # Printing sedan
     def __str__(self):
         return (
-            f"({self._manufacturer}) {self._model}, mpg: {self._mpg}"
+            f"({self._manufacturer}) {self._model}, mpg: {self._mpg:.2f}"
         )
     
     

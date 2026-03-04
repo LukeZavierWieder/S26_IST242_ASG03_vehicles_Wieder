@@ -40,7 +40,7 @@ class Truck(Vehicle):
     # Printing truck
     def __str__(self):
         return (
-            f"({self._manufacturer}) {self._model}, mpg: {self._mpg}"
+            f"({self._manufacturer}) {self._model}, mpg: {self._mpg:.2f}"
             f" Is dually truck: {self._is_dually})"
         )
     
