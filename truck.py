@@ -6,7 +6,7 @@ from manufacturer import Manufacturer
 from auto_model import AutoModel
 
 
-class Truck:
+class Truck(Vehicle):
     '''
     Creates the truck class
     '''
@@ -26,6 +26,12 @@ class Truck:
     @property
     def is_dually(self):
         return self._is_dually
+    @property
+    def release_year(self):
+        '''
+        Returns the first production year
+        '''
+        return self._years[0]
     
     # Printing truck
     def __str__(self):

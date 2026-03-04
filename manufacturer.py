@@ -39,4 +39,4 @@ class Manufacturer:
         '''
         Prints out the manufacturer object
         '''
-        return f"({self._name}, {self._country})"
+        return f"{self._name}, {self._country}"

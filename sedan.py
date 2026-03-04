@@ -18,6 +18,13 @@ class Sedan(Vehicle):
     # Specify the abstract method
     def number_of_wheels(self):
         return 4
+    # Getter
+    
+    def release_year(self):
+        '''
+        Returns the first production year
+        '''
+        return AutoModel.years[0]
     
     # Printing sedan
     def __str__(self):

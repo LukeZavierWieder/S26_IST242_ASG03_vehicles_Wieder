@@ -62,5 +62,4 @@ class AutoModel:
         return self._years[0]
     
     def __str__(self):
-        return f"{self._name} inproduction = {self._in_production}"
-        f"  release years = {self._years}"
+        return f"{self._name} in production = {self._in_production},  release year: {self._years[0]}"
